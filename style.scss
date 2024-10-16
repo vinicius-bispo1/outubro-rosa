@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+}
+
+header{
+    height: 15vh;
+    background-color: #FF69B4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   @media (max-width: 770px){
+    flex-direction: column;
+    height: 30vh;
+   }
+}
+
+.BoxLogo{
+    // border: solid 2px red;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    color: white;
+    @media (max-width: 770px){
+      flex-direction: column;  
+      width: 100%;
+    }
+
+    h1{
+        font-size: 1.7vw;
+        font-weight: 400;
+        @media (max-width: 770px){
+            font-size: 2.5vw;
+        }
+        @media (max-width: 500px){
+            font-size: 3.1vw;
+        }
+    }
+    img{
+        @media (max-width: 1000px){
+            width: 9vw;
+        }
+        @media (max-width: 770px){
+            width: 12vw;
+        }
+        @media (max-width: 500px){
+            width: 15vw;
+        }
+    }
+}
+
+nav{
+    // border: solid 2px yellow;  
+    width: 40vw;
+    @media (max-width: 770px){
+        width: 100%;
+    }
+    ul{
+      display: flex; 
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.5vw; 
+      @media (max-width: 770px){
+        justify-content: space-evenly;
+        font-size: 2.3vw;
+    }
+    @media (max-width: 500px){
+        font-size: 3vw;
+    }
+      a{
+        color: white;
+        
+      }
+    }
+}
